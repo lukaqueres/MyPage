@@ -1,0 +1,108 @@
+{
+	"name": "Łukasz Kocielnik",
+    "media": {
+        "linkedin": "https://pl.linkedin.com/in/lukas-kocielnik",
+        "github": "https://github.com/lukaqueres",
+        "email": "lkocieln@gmail.com",
+        "phone": "123456789"
+    },
+    "skills": {
+        "sections": [
+            {
+                "name": "Development languages",
+                "content": [
+                    {
+                        "name": "CSS"
+                    },
+                    {
+                        "name": "JavaScript",
+                        "level": 2
+                    },
+                    {
+                        "name": "HTML"
+                    },
+                    {
+                        "name": "Php",
+                        "level": 1
+                    },
+                    {
+                        "name": "Laravel",
+                        "level": 1
+                    },
+                    {
+                        "name": "Python"
+                    },
+                    {
+                        "name": "SQL"
+                    },
+                    {
+                        "name": "C#",
+                        "level": 1
+                    },
+                    {
+                        "name": "Bash",
+                        "level": 1
+                    }
+                ]
+            },
+            {
+                "name": "Databases",
+                "content": [
+                    {
+                        "name": "MariaDB",
+                        "level": 2
+                    },
+                    {
+                        "name": "PostgreSQL"
+                    }
+                ]
+            },
+            {
+                "name": "Collaboration",
+                "content": [
+                    {
+                        "name": "Git",
+                        "level": 1
+                    },
+                    {
+                        "name": "GitHub"
+                    }
+                ]
+            }
+        ]
+    },
+    "work-expirience": [
+        {
+            "position": "PR Specialist",
+            "company": "Anysoft",
+            "time": "2021 - NOW",
+            "details": [
+                "Was responsible for translation of news articles about JetBrains Products",
+                "Managed shop stock"
+            ]
+        },
+        {
+            "position": "Lead Developer",
+            "company": "Discord Inc.",
+            "time": "? - ?",
+            "details": [
+                "Developed new features",
+                "Improved API used by developers",
+                "Worked on front end of application as well as web page"
+            ]
+        },
+        {
+            "position": "Python Developer",
+            "company": "Akamai",
+            "time": "? - ?"
+        }
+    ],
+    "education": [
+        {
+            "title": "IT Specialists",
+            "school": "Szkoła Średnia im. gen. Józefa Bema",
+            "field": "IT",
+            "graduation": "04.2023"
+        }
+    ]
+}

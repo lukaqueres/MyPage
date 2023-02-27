@@ -1,0 +1,77 @@
+:root {
+    --accent-color: purple;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: bahnschrift, arial;
+    font-weight: lighter;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: purple white;
+}
+
+:is(a, button):hover {
+    cursor: pointer;
+}
+
+header {
+    /*backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    background-color: #ffffff7a;*/
+    position: fixed;
+    z-index: 95;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0.5rem 1rem;
+}
+
+    header > #head-name {
+        display: inline-block;
+        text-transform: uppercase;
+        background: -webkit-linear-gradient(0deg, blue, var(--accent-color));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: 0.5rem;
+        text-decoration: none;
+    }
+
+    header > #head-icons {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+    }
+
+        header > #head-icons :is( ion-icon,a) {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        header > #head-icons a {
+            transition: 0.25s cubic-bezier(.25,.46,.45,.94);
+            margin-inline: 0.5rem;
+            color: var(--accent-color);
+            border-bottom: 1px solid transparent;
+/*            border-radius: 0.2rem;*/
+            box-sizing: content-box;
+        }
+
+            header > #head-icons a:hover {
+                border-color: purple;
+            }
+
+main {
+    /*margin-top: 2rem;
+    padding: 1rem;*/
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
