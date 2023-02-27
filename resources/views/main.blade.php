@@ -8,51 +8,31 @@
 	<style>
 
 		.section-name {
+			color: purple;
 			text-transform: uppercase;
 			transform:translateX(-100%);
 			padding: 0 0.5rem;
 			text-align: right;
+			line-height: 1.5rem;
 		}
 
 		.skill-section {
-			padding: 1rem;
-			border-bottom: 1px solid purple;
-        			/*border: 1px solid;
-			border-color: var(--accent-color) transparent transparent var(--accent-color);
-			border-radius: 0.5rem 0 0 0;*/
+        	padding: 1rem;
+			border-top: 1px dashed purple;
 			margin-inline: 0.5rem;
+			transform: translateY(-1.5rem);
 		}
-
-		/*
-			.skill-section:nth-of-type(2n) {
-				border-color: var(--accent-color) var(--accent-color) transparent transparent;
-				border-radius: 0 0.5rem 0 0;
-        		
-			}
-
-        		.skill-section:nth-of-type(2n) > .name {
-        			transform: translateX(100%);
-					text-align: right;
-					border-left: none;
-					border-right: 1px solid var(--accent-color);
-        		}*/
 
         	.skill-section > .name {
         		text-transform: uppercase;
 				transform:translateX(-100%);
-				/*
-				transform: translateX(-100%);
-				text-align: left;
-				background-color: white;
-				border-right: none;
-				border-left: 1px solid var(--accent-color);*/
 				padding: 0 0.2rem;
         	}
 
 		.dev-tag-container {
 			display: flex;
 			flex-wrap: wrap;
-			justify-content: center;
+			/*justify-content: center;*/
 		}
 
 		dev-tag {
@@ -69,6 +49,7 @@
 			max-width: 40rem; /*50rem*/
 			width: 100vw;
 			border-left: 1px solid purple;
+			box-shadow: 0 0 5px purple;
 		}
 
 		.title {
