@@ -13,6 +13,11 @@ html {
     scroll-behavior: smooth;
     scrollbar-width: thin;
     scrollbar-color: purple white;
+    height: 100vh;
+}
+
+body {
+    height: 100vh;
 }
 
 :is(a, button):hover {

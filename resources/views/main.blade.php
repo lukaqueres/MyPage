@@ -43,11 +43,13 @@
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+			height: 100%;
 		}
 
 		#main-container {
 			max-width: 40rem; /*50rem*/
-			width: 100vw;
+			width: 100vw; /* - Max 40, scales to screen width if smaller -*/
+			height: 100%;
 			border-left: 1px solid purple;
 			box-shadow: 0 0 5px purple;
 		}
