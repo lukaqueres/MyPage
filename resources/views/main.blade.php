@@ -10,16 +10,13 @@
 		.section-name {
 			color: purple;
 			text-transform: uppercase;
-			transform:translateX(-100%);
+			position: relative;
+			right: calc( 100% + 1rem);
 			padding: 0 0.5rem;
 			text-align: right;
-			line-height: 1.5rem;
 		}
 
 		.skill-section {
-        	padding: 1rem;
-			border-top: 1px dashed purple;
-			margin-inline: 0.5rem;
 			transform: translateY(-1.5rem);
 		}
 
@@ -50,22 +47,25 @@
 			max-width: 40rem; /*50rem*/
 			width: 100vw; /* - Max 40, scales to screen width if smaller -*/
 			height: 100%;
-			border-left: 1px solid purple;
+			padding-top: 4rem;
 			box-shadow: 0 0 5px purple;
+			background-color: purple;
+			color: white;
 		}
 
 		.title {
-			color: var(--accent-color);
 			margin-block: 1rem;
 			text-align: center;
+			text-transform: full-width uppercase;
 		}
 
-		#skills {
+		#skills, #works {
 			/*display: grid;
         	grid-template-columns: minmax(20rem,1fr) minmax(20rem,1fr);
         				*/
 			display: flex;
 			flex-direction: column;
+			margin-inline: 0.5rem;
 		}
 
 		.work {
@@ -75,9 +75,7 @@
 		.work > .work-title {
 			display: flex;
 			align-items: center;
-        	border-top: 1px solid var(--accent-color);
 			padding: 0.5rem;
-			color: var(--accent-color);
 			font-size: larger;
 		}
 
@@ -139,11 +137,12 @@
             @endisset
             @isset($data["work-expirience"])
 				<h1 class="title">Work Expirience</h1>
+				<div id="works">
 				@foreach($data["work-expirience"] as $work)
 					<div class="work">
 						<div class="work-title"><p>{{$work["position"]}} at {{$work["company"]}}</p><p class="date">{{$work["time"]}}</p></div>
 						@isset($work["details"])
-							<ul>
+							<ul class="dashed">
 								@foreach($work["details"] as $detail)
 									<li>{{$detail}}</li>
 								@endforeach
@@ -151,6 +150,7 @@
 						@endisset
 					</div>
 				@endforeach
+				</div>
             @endisset
             @isset($data["education"])
 				<h1 class="title">Education</h1>

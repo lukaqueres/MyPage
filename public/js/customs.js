@@ -44,12 +44,12 @@ class DevTag extends HTMLElement {
         style.textContent = `
             .name {
                 display: inline;
-                color: var(--primary-color);
-                background-color: white;
-                border: 1px solid var(--primary-color);
+                color: var(--color);
+                background-color: var(--background-color);
+                border: 1px solid var(--color);
                 border-radius: 0.2rem;
                 padding: 0.2rem 0.5rem;
-                box-shadow: 1px 1px 0 1px white;
+                box-shadow: 1px 1px 0 1px var(--background-color);
                 text-align: center;
                 z-index: 1;
             }
@@ -58,10 +58,10 @@ class DevTag extends HTMLElement {
                 text-transform: uppercase;
                 font-size: small;
                 margin-left: auto;
-                border: 1px solid var(--primary-color);
+                border: 1px solid var(--color);
                 border-top: none;
-                background-color: var(--primary-color);
-                color: white;
+                background-color: var(--color);
+                color: var(--background-color);
                 border-radius: 0.2rem;
                 transform: translate(0.75rem, -0.4rem);
                 padding: 0.5rem 0.2rem 0.3rem;
@@ -76,24 +76,12 @@ class DevTag extends HTMLElement {
             }
             `;
 
-        switch (parseInt(this.getAttribute('scheme'))) {
-
-            case 1:
-                style.textContent += `
-                    * {
-                        --primary-color: blue;
-                    }
-                `;
-                break;
-
-            default:
-                style.textContent += `
-                    * {
-                        --primary-color: purple;
-                    }
-                `;
-                break;
-        }
+        style.textContent += `
+            * {
+                --color: ${ this.getAttribute('color') || "white" };
+                --background-color: ${ this.getAttribute('background-color') || "purple" };
+            }
+        `;
 
 		// Attach the created elements to the shadow dom
         shadow.appendChild(style);
