@@ -1,15 +1,15 @@
 {
-	"name": "Łukasz Kocielnik",
-    "media": {
-        "linkedin": "https://pl.linkedin.com/in/lukas-kocielnik",
-        "github": "https://github.com/lukaqueres",
-        "email": "lkocieln@gmail.com",
-        "phone": "123456789"
+    "meta": {
+        "name": "Łukasz Kocielnik",
+        "media": {
+            "linkedin": "https://pl.linkedin.com/in/lukas-kocielnik",
+            "github": "https://github.com/lukaqueres"
+        }
     },
     "skills": {
-        "sections": [
+        "categories": [
             {
-                "name": "Development languages",
+                "category": "Languages",
                 "content": [
                     {
                         "name": "CSS"
@@ -22,7 +22,7 @@
                         "name": "HTML"
                     },
                     {
-                        "name": "Php",
+                        "name": "PHP",
                         "level": 1
                     },
                     {
@@ -46,7 +46,7 @@
                 ]
             },
             {
-                "name": "Databases",
+                "category": "Databases",
                 "content": [
                     {
                         "name": "MariaDB",
@@ -58,7 +58,7 @@
                 ]
             },
             {
-                "name": "Collaboration",
+                "category": "Collaboration",
                 "content": [
                     {
                         "name": "Git",
@@ -76,7 +76,7 @@
             "position": "PR Specialist",
             "company": "Anysoft",
             "time": "2021 - NOW",
-            "description": "Example description of job I am doing in this work",
+            "description": "Example description of things I am doing in this work",
             "details": [
                 "Was responsible for translation of news articles about JetBrains Products",
                 "Managed shop stock"
@@ -102,8 +102,32 @@
         {
             "title": "IT Specialists",
             "school": "Szkoła Średnia im. gen. Józefa Bema",
-            "field": "IT",
+            "description": "IT school",
             "graduation": "04.2023"
+        }
+    ],
+    "projects": [
+        {
+            "title": "MyPage",
+            "description": "This project provides personal pages with just one JSON file. Uses Laravel framework to create page with all data",
+            "url": "https://github.com/lukaqueres/MyPage",
+            "skills": [ "PHP", "Laravel", "JS", "CSS", "HTML" ]
+        },
+        {
+            "title": "ThePlanBot",
+            "description": "This is a web page used for management and configuration of Plan It bot instances",
+            "skills": [ "SQL", "Python" ]
+        }
+    ],
+    "courses": [
+        {
+            "name": "Photoshop course",
+            "date": "December 2022"
+        },
+        {
+            "name": "Youtube",
+            "url": "https://www.youtube.com/",
+            "date": "Current"
         }
     ]
 }
