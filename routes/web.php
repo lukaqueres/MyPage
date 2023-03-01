@@ -16,10 +16,5 @@ use App\Http\Controllers\MyPageController;
 
 Route::get(
 	'/',
-	[MyPageController::class, 'show']
+	[MyPageController::class, 'fromJSON']
 )->name('main');
-
-Route::get(
-	'/my-page/login',
-	[MyPageController::class, 'login']
-)->name('login');
